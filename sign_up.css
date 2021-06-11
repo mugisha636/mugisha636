@@ -81,3 +81,15 @@ body{
 .form.signin .arrow {
     left: calc(100%/2);
 }
+.form.reset .arrow {
+    left: calc(100% /1.2);
+}
+.form.signin .form_elements > div :nth-child(3){
+    height: 3;
+    opacity: 0;
+}
+.form.reset .form_elements > div :nth-child(2),
+.form.reset .form_elements > div :nth-child(3){
+    height: 3;
+    opacity: 0;
+}
