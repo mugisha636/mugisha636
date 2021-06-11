@@ -1,0 +1,83 @@
+body{
+    background: #2c2c2c;
+    font-family: "raleway";
+}
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 250px;
+    padding: 10px;
+}
+.form .form_head{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.form .form_head > div {
+    width: calc(100% / 3);
+    color: #ddd;
+    font-size: 18px;
+    font-weight: 800;
+}
+.form.signup .form_head div.show_signup {
+    color: #f1575b;
+} 
+.form.signin .form_head div.show_signin {
+    color: #f1575b;
+}  
+.form.reset .form_head div.show_reset {
+    color: #f1575b;
+} 
+.form .form_elements {
+    margin-top: 15px;
+}
+.form .form_elements .form_element {
+    height: 50px;
+   opacity: 1;
+   overflow: hidden;
+}
+.form .form_elements input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid #222;
+    background: f5f5f5;
+}
+.form .form_elements button {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid #222;
+    background: #f1575b;
+    color: #f5f5f5;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.form .arrow {
+    position: absolute;
+    top: 50px;
+    width: 0PX;
+    height: 0PX;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #f5f5f5;
+    
+
+}
+.form.signup .arrow {
+    left: calc(calc(100% / 3) /2);
+}
+.form.signin .arrow {
+    left: calc(100%/2);
+}
